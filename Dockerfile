@@ -6,17 +6,17 @@ MAINTAINER mike@mikangali.com
 
 RUN curl -sL https://deb.nodesource.com/setup | sudo bash - && \
 	apt-get update && \
-	apt-get install -y nodejs \
+	apt-get install -y nodejs npm \
 	git git-core build-essential \
 	python python-dev python-pip python-virtualenv
 
 # Install npm package
 
-RUN npm install -g bower 	 		&& \
-	npm install -g express 	 		&& \
-	npm install -g gulp 	 		&& \
-	npm install -g grunt-cli 		&& \
-	npm install -g yo 		 		&& \
+RUN npm install -g bower && \
+	npm install -g express && \
+	npm install -g gulp && \
+	npm install -g grunt-cli && \
+	npm install -g yo && \
 	npm install -g generator-meanjs && \
 	npm install -g strongloop
 
