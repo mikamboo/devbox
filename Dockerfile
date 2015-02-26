@@ -1,23 +1,12 @@
-FROM ubuntu
+FROM node:0.10.36
 
 MAINTAINER mike@mikangali.com
 
 # Install dev tools
 
-# Install Node
-RUN apt-get update && \
-	apt-get install -y wget && \
-	cd /opt && \
-	wget http://nodejs.org/dist/v0.12.0/node-v0.12.0-linux-x64.tar.gz && \
-	tar -xzf node-v0.12.0-linux-x64.tar.gz && \
-	mv node-v0.12.0-linux-x64 node && \
-	cd /usr/local/bin && \
-	ln -s /opt/node/bin/* . && \
-	rm -f /opt/node-v0.12.0-linux-x64.tar.gz 
-
 RUN apt-get update && \
 	apt-get install -y \
-	git git-core build-essential \
+	build-essential \
 	python python-dev python-pip python-virtualenv
 
 # Install npm package
