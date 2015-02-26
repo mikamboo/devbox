@@ -4,8 +4,10 @@ MAINTAINER mike@mikangali.com
 
 # Install dev tools
 
-RUN apt-get update && \
-	apt-get install -y nodejs nodejs-legacy npm git git-core \
+RUN curl -sL https://deb.nodesource.com/setup | sudo bash - && \
+	apt-get update && \
+	apt-get install -y nodejs \
+	git git-core build-essential \
 	python python-dev python-pip python-virtualenv
 
 # Install npm package
