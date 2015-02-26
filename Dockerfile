@@ -8,7 +8,7 @@ MAINTAINER mike@mikangali.com
 RUN apt-get update && \
 	apt-get install -y wget && \
 	cd /opt && \
-	wget http://nodejs.org/dist/v0.10.28/node-v0.12.0-linux-x64.tar.gz && \
+	wget http://nodejs.org/dist/v0.12.0/node-v0.12.0-linux-x64.tar.gz && \
 	tar -xzf node-v0.12.0-linux-x64.tar.gz && \
 	mv node-v0.12.0-linux-x64 node && \
 	cd /usr/local/bin && \
