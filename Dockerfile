@@ -1,4 +1,4 @@
-FROM node:0.10.36
+FROM node:0.10.38
 
 MAINTAINER mike@mikangali.com
 
@@ -12,6 +12,7 @@ RUN apt-get update && \
 # Install npm package
 
 RUN npm install -g bower && \
+	npm install -g json-server && \
 	npm install -g express && \
 	npm install -g gulp && \
 	npm install -g grunt-cli && \
@@ -19,6 +20,8 @@ RUN npm install -g bower && \
 	npm install -g generator-meanjs && \
 	npm install -g strongloop
 
-EXPOSE 3000 4000 5000 8000 8080 9000 35729 
+# Exposed ports
+
+EXPOSE 22 25 3000 3001 4000 5000 7777 8000 8080 8888 9000 35729 
 
 CMD /bin/bash
