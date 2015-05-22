@@ -1,5 +1,7 @@
 # DEVBOX
 
+[![Join the chat at https://gitter.im/mikamboo/devbox](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mikamboo/devbox?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A Fullstack Js ready Docker image, built on top of Debian Jessie.
 
 ### Usage example
