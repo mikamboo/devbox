@@ -18,7 +18,12 @@ RUN npm install -g bower && \
 	npm install -g grunt-cli && \
 	npm install -g yo && \
 	npm install -g generator-meanjs && \
-	npm install -g strongloop
+	npm install -g strongloop && \
+	npm install -g pm2
+
+# Install MeteorJS
+
+RUN curl https://install.meteor.com/ | sh
 
 # Exposed ports
 
