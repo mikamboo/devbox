@@ -1,4 +1,4 @@
-FROM node:0.10.38
+FROM node:0.12.7
 
 MAINTAINER mike@mikangali.com
 
@@ -27,6 +27,6 @@ RUN curl https://install.meteor.com/ | sh
 
 # Exposed ports
 
-EXPOSE 22 25 3000 3001 4000 5000 7777 8000 8080 8888 9000 35729 
+EXPOSE 22 25 3000 3001 4000 5000 7777 8000 8080 8888 9000 35729
 
 CMD /bin/bash
