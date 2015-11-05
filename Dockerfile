@@ -19,7 +19,8 @@ RUN npm install -g bower && \
 	npm install -g yo && \
 	npm install -g generator-meanjs && \
 	npm install -g strongloop && \
-	npm install -g pm2
+	npm install -g pm2 && \
+	npm install -g pm2-gui
 
 # Install MeteorJS
 
@@ -27,6 +28,6 @@ RUN curl https://install.meteor.com/ | sh
 
 # Exposed ports
 
-EXPOSE 22 25 3000 3001 4000 5000 7777 8000 8080 8888 9000 35729
+EXPOSE 80 3000 3001 4000 8000 8080 9000 35729
 
 CMD /bin/bash
